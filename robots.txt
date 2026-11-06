@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goldencrust-bakery.netlify.app/sitemap.xml

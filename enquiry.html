@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | Golden Crust Bakery Johannesburg</title>
+  <meta name="description" content="Enquire about Golden Crust Bakery products. Get an instant cost estimate and availability for bread, cakes and catering.">
+  <meta name="keywords" content="bakery enquiry, order cake, price estimate, catering quote">
+  <meta name="author" content="Golden Crust Bakery">
+  <meta property="og:title" content="Enquiry | Golden Crust Bakery">
+  <meta property="og:description" content="Enquire about Golden Crust Bakery products. Get an instant cost estimate and availability for bread, cakes and catering.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://goldencrust-bakery.netlify.app/enquiry.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <!-- Header and navigation: identical on every page so links work across the site -->
+  <header class="site-header">
+    <a class="logo" href="index.html">Golden<span>Crust</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </header>
+  <main id="main">
+
+    <section class="container narrow">
+      <h1>Product Enquiry</h1>
+      <p>Complete the form for an instant cost estimate and availability. All fields marked * are required.</p>
+      <form id="enquiry-form" novalidate>
+        <div class="field"><label for="e-name">Full name *</label><input id="e-name" name="name" type="text" required minlength="2" maxlength="60" autocomplete="name"><span class="error"></span></div>
+        <div class="field"><label for="e-email">Email *</label><input id="e-email" name="email" type="email" required autocomplete="email"><span class="error"></span></div>
+        <div class="field"><label for="e-phone">Phone * (e.g. 082 123 4567)</label><input id="e-phone" name="phone" type="tel" required autocomplete="tel"><span class="error"></span></div>
+        <div class="field"><label for="e-product">Product *</label><select id="e-product" name="product" required><option value="">Select a product</option></select><span class="error"></span></div>
+        <div class="field"><label for="e-qty">Quantity * (1 to 50)</label><input id="e-qty" name="qty" type="number" min="1" max="50" value="1" required><span class="error"></span></div>
+        <div class="field"><label for="e-date">Required date *</label><input id="e-date" name="date" type="date" required><span class="error"></span></div>
+        <fieldset class="field"><legend>Collection method *</legend><label><input type="radio" name="method" value="collect" checked> Collect in store</label> <label><input type="radio" name="method" value="deliver"> Delivery (R60)</label></fieldset>
+        <div class="field"><label for="e-msg">Extra details (optional, max 300 characters)</label><textarea id="e-msg" name="msg" rows="4" maxlength="300"></textarea></div>
+        <button class="btn" type="submit">Get estimate</button>
+      </form>
+      <div id="enquiry-result" class="result" role="status" aria-live="polite" hidden></div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div><strong>Golden Crust Bakery</strong><p>Fresh bread, cakes and pastries baked daily in Johannesburg.</p></div>
+    <div><p>Email: <a href="mailto:hello@goldencrust.example">hello@goldencrust.example</a></p><p>Tel: <a href="tel:+27110000000">011 000 0000</a></p></div>
+    <div><p><a href="https://www.facebook.com/" rel="noopener">Facebook</a> | <a href="https://www.instagram.com/" rel="noopener">Instagram</a></p><p>&copy; <span id="year">2026</span> Golden Crust Bakery. Fictional business for an academic project.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

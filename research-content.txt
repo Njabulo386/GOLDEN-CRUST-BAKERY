@@ -1,0 +1,3 @@
+Golden Crust Bakery - researched content summary
+Organisation: fictional family bakery, Johannesburg, 3 branches. Sources: MDN, Google SEO guide, Leaflet, OpenStreetMap (see README references).
+Content created: page text (original), product list and prices (invented, realistic), original image illustrations in /images.
